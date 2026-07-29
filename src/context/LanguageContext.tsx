@@ -4,7 +4,7 @@
 
 // import { createContext, useContext, useState, ReactNode } from 'react'
 
-// export type Language = 'fr' | 'en'
+// export type Language = 'fr' | 'en' | 'zh'
 
 // interface Translations {
 //   nav: {
@@ -219,6 +219,81 @@
 //       bottomText: 'Growing stronger every year with commitment to excellence',
 //     },
 //   },
+//   zh: {
+//     nav: {
+//       home: '首页',
+//       about: '关于我们',
+//       services: '服务',
+//       gallery: '画廊',
+//       documents: '文件',
+//       contact: '联系我们',
+//       quoteBtn: '获取报价',
+//       location: '刚果民主共和国，上加丹加省，卢本巴希',
+//     },
+//     hero: {
+//       badge: '位于刚果民主共和国卢本巴希',
+//       title1: '矿业与基础设施',
+//       title2: '工程',
+//       title3: '卓越',
+//       title4: '',
+//       description: '在刚果民主共和国全境提供符合国际标准的土木工程、岩土工程专业知识和工业服务。',
+//       highlights: ['资质工程师', '安全第一', '质量保证'],
+//       servicesBtn: '我们的服务',
+//       contactBtn: '联系我们',
+//       projectsDone: '已完成项目',
+//       yearsExp: '年经验',
+//       stats: ['年经验', '已完成项目', '团队成员', '客户满意度'],
+//     },
+//     about: {
+//       title: '关于 SYLWAK INVESTMENT',
+//       description: 'SYLWAK INVESTMENT SARL 于2023年在卢本巴希成立，在刚果民主共和国全境提供高质量的土木工程、采矿服务和工业解决方案。',
+//       items: [
+//         '经验丰富的工程师和技术人员',
+//         '国际质量标准',
+//         '现代化设备与技术',
+//         '安全第一的方针',
+//         '按时交付项目',
+//       ],
+//     },
+//     services: {
+//       title: '我们的服务',
+//       subtitle: '为采矿和基础设施项目提供全面的工程和工业服务。',
+//       list: [
+//         { title: '土木工程', desc: '完整的基础设施和结构解决方案' },
+//         { title: '道路建设', desc: '公路、矿区道路、沥青铺设' },
+//         { title: '采矿服务', desc: '场地准备和支持设施' },
+//         { title: '岩土实验室', desc: '土壤测试和材料分析' },
+//         { title: '工业服务', desc: '清洁、维护、技术支持' },
+//         { title: '电气工程', desc: '现场照明和电力系统' },
+//         { title: '材料供应', desc: '建筑材料和设备' },
+//         { title: '运输', desc: '卡车租赁、巴士服务、物流' },
+//       ],
+//     },
+//     gallery: {
+//       title: '我们的成就',
+//       subtitle: '探索我们在刚果民主共和国各地完成的项目。',
+//       categories: ['全部', '建筑', '采矿', '电气', '工业', '实验室'],
+//       noImages: '此类别中没有图片',
+//     },
+//     documents: {
+//       title: '文件与认证',
+//       subtitle: '下载我们的公司文件、认证和技术能力资料。',
+//       searchPlaceholder: '搜索文件...',
+//       categories: ['全部', '公司', '法律', '质量', '安全', '技术'],
+//       noDocuments: '未找到文件',
+//     },
+//     stats: {
+//       badge: '数据概览',
+//       title: '我们的业绩',
+//       list: [
+//         { label: '年经验', desc: '自2023年起服务' },
+//         { label: '已完成项目', desc: '遍布刚果民主共和国' },
+//         { label: '团队成员', desc: '资质人员' },
+//         { label: '满意客户', desc: '值得信赖的合作伙伴' },
+//       ],
+//       bottomText: '以卓越为承诺，每年不断壮大',
+//     },
+//   },
 // }
 
 // interface LanguageContextType {
@@ -319,6 +394,10 @@ interface Translations {
     }[]
     bottomText: string
   }
+  partners: {
+    title: string
+    subtitle: string
+  }
 }
 
 const translationsData: Record<Language, Translations> = {
@@ -396,6 +475,10 @@ const translationsData: Record<Language, Translations> = {
       ],
       bottomText: 'Toujours plus fort chaque année avec un engagement envers l\'excellence',
     },
+    partners: {
+      title: 'Ils nous font confiance',
+      subtitle: 'Nos partenaires de confiance',
+    },
   },
   en: {
     nav: {
@@ -471,6 +554,10 @@ const translationsData: Record<Language, Translations> = {
       ],
       bottomText: 'Growing stronger every year with commitment to excellence',
     },
+    partners: {
+      title: 'They trust us',
+      subtitle: 'Our trusted partners',
+    },
   },
   zh: {
     nav: {
@@ -545,6 +632,10 @@ const translationsData: Record<Language, Translations> = {
         { label: '满意客户', desc: '值得信赖的合作伙伴' },
       ],
       bottomText: '以卓越为承诺，每年不断壮大',
+    },
+    partners: {
+      title: '他们信任我们',
+      subtitle: '我们值得信赖的合作伙伴',
     },
   },
 }
